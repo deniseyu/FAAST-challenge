@@ -15,5 +15,6 @@ Responsibilities: Travel between stations, be comprised of multiple carriages
 Collaborations: Station, carriage
 
 Station
-Responsibilities: Let passenger enter station, let passenger exit station, let train enter, let train exit, let passenger board carriage, let passenger exit carriage
+Responsibilities: Let passenger enter station, let passenger exit station, let train enter, let train exit, 
+let passenger board carriage, let passenger exit carriage
 Collaborations: Passenger, train 
