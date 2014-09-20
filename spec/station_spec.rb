@@ -42,7 +42,5 @@ describe Station do
 		station.discharge(train)
 		expect(station.train_count).to be 0
 	end
-
-
 	
 end
