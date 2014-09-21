@@ -42,5 +42,11 @@ describe Station do
 		station.discharge(train)
 		expect(station.train_count).to be 0
 	end
+
+	it "should know what trains are currently in the station" do 
+		expect(station.train_count).to be 0
+		station.receive(train)
+		expect(station.trains).to eq [train] 
+	end
 	
 end

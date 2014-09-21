@@ -11,6 +11,11 @@ describe Passenger do
 		expect(passenger.wallet_balance).to_not eq 0
 	end
 
+	# it "should be able to pay for a journey at the station" do 
+	# 	expect(passenger.wallet_balance).to_not eq 0
+	# 	passenger.pay
+	# 	expect()
+
 
 	# it "should be touch in at a station" do 
 	# 	passenger = Passenger.new
