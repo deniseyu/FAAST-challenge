@@ -1,5 +1,6 @@
 require './lib/spec_helper'
 require './lib/station'
+require './lib/train'
 
 describe Station do 
 
