@@ -17,6 +17,13 @@ describe Passenger do
 		expect(passenger.wallet_balance).to eq 18
 	end
 
+	it "should be able to add balance to wallet" do 
+		expect(passenger.wallet_balance).to eq 20
+		passenger.top_up(10)
+		expect(passenger.wallet_balance).to eq 30
+	end
+
+
 	# it "should be able to pay for a journey at the station" do 
 	# 	expect(passenger.wallet_balance).to_not eq 0
 	# 	passenger.pay

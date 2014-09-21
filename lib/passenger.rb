@@ -14,4 +14,8 @@ class Passenger
 		@wallet_balance -= 2
 	end
 
+	def top_up(amount)
+		@wallet_balance += amount 
+	end
+
 end

@@ -20,6 +20,7 @@ class Station
 	end
 
 	def admit(passenger)
+		raise "No money, no ride" if passenger.wallet_balance == 0
 		@passengers << passenger
 	end
 

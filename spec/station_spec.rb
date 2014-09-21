@@ -1,6 +1,7 @@
 require './lib/spec_helper'
 require './lib/station'
 require './lib/train'
+require './lib/passenger'
 
 describe Station do 
 
@@ -14,16 +15,24 @@ describe Station do
 
 	it "should allow a passenger to enter" do 
 		expect(station.passenger_count).to be 0
+		allow(passenger).to receive(:wallet_balance).and_return 20
 		station.admit(passenger)
 		expect(station.passenger_count).to be 1
 	end
 
 	it "should allow a passenger to leave" do 
 		expect(station).to be_empty
+		allow(passenger).to receive(:wallet_balance).and_return 20
 		station.admit(passenger)
 		expect(station.passenger_count).to be 1
 		station.release(passenger)
 		expect(station.passenger_count).to be 0
+	end
+
+	it "should not allow a passenger with zero balance to tap in" do 
+		allow(passenger).to receive(:wallet_balance).and_return 0
+		expect(passenger.wallet_balance).to be 0
+		expect{ station.admit(passenger) }.to raise_error(RuntimeError)
 	end
 
 	it "should initially have no trains" do
