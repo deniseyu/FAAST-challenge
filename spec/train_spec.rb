@@ -6,8 +6,8 @@ describe Train do
 	let(:train) { Train.new }
 	let(:carriage) { double :carriage }
 
-	it "should initially have no carriages" do 
-		expect(train.length).to eq 0
+	it "should initially have four carriages" do 
+		expect(train.length).to eq 4
 	end
 
 	it "should be able to add carriages" do 

@@ -1,13 +1,12 @@
 class Train 
 
-	attr_accessor :carriage
+	attr_accessor :carriages
 
-	def initialize
-		@carriages = carriages
-	end
-
-	def carriages
-		@carriages ||= []
+	def initialize(carriages: 4)
+		@carriages = []
+		carriages.times do 
+			@carriages << Carriage.new
+		end
 	end
 
 	def length

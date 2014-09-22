@@ -18,7 +18,7 @@ class Station
 	end
 
 	def admit(passenger)
-		raise "No money, no ride" if passenger.wallet_balance < 2
+		raise "You are too poor" if passenger.wallet_balance < 2
 		raise "No more room for passengers" if full?
 		raise "You have not paid" if passenger.paid? == false
 		@passengers << passenger

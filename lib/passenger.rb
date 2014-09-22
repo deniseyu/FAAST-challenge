@@ -10,14 +10,6 @@ class Passenger
 		@paid = false
 	end
 
-	def enter(station)
-		@passengers << passenger
-	end
-
-	def wallet_balance
-		@wallet_balance
-	end
-
 	def tap_in
 		@wallet_balance -= 2
 		@paid = true
