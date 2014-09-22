@@ -2,6 +2,10 @@ class Train
 
 	attr_accessor :carriage
 
+	def initialize
+		@carriages = carriages
+	end
+
 	def carriages
 		@carriages ||= []
 	end
@@ -17,16 +21,5 @@ class Train
 	def remove(carriage)
 		carriages.pop
 	end
-	
-	# def passenger_count
-	# 	carriages.each do |carriage|
-	# 		carriage.passenger_count
-	# 	end
-	# end
-
-
-
-
-
 
 end
