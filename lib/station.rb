@@ -24,6 +24,10 @@ class Station
 		@passengers << passenger
 	end
 
+	def release(passenger)
+		passengers.pop.paid? == false
+	end
+
 	def receive(train)
 		@trains << train 
 	end

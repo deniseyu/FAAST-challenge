@@ -26,7 +26,7 @@ module PeopleHolder
 	end
 
 	def release(passenger)
-		passengers.pop 
+		passengers.pop
 	end
 
 	def admit(passenger)
