@@ -8,6 +8,7 @@ class Carriage
 
 	def admit(passenger)
 		raise "No more room in this carriage" if full?
+		# raise "No train here" if station.train_count = 0
 		@passengers << passenger
 	end
 

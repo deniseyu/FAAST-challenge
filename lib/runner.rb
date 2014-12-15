@@ -1,5 +1,5 @@
-require_relative 'spec_helper'
 require_relative 'passenger'
 require_relative 'station'
 require_relative 'train'
 require_relative 'carriage'
+require_relative 'people_holder'

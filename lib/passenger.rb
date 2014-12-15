@@ -27,6 +27,4 @@ class Passenger
 		@paid
 	end
 
-
-
 end
